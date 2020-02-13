@@ -5,7 +5,7 @@
     <classes>
       <class name="HackerRankTests.HackerRankTestCases">
         <methods>
-          <include name="conditionalActions_Test"/>
+          <include name="mulitples_Test"/>
         </methods>
       </class> <!-- HackerRankTests.HackerRankTestCases -->
     </classes>
