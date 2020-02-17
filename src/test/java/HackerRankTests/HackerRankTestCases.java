@@ -4,15 +4,22 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import practiceProblems1.ArmstrongNumber;
+import practiceProblems1.ArraySum;
 import practiceProblems1.BinarySearchTreeNode;
+import practiceProblems1.CharactersInString;
 import practiceProblems1.ConditionalActions;
 import practiceProblems1.DataTypes;
 import practiceProblems1.Display100Primes;
+import practiceProblems1.Factorial;
+import practiceProblems1.Fibinocci;
+import practiceProblems1.FloydsTriangle;
 import practiceProblems1.IntToString;
 import practiceProblems1.LowestCommonAncestor;
 import practiceProblems1.Multiples;
+import practiceProblems1.ReverseNumber;
 import practiceProblems1.SwapNumbers;
 import practiceProblems1.findDay;
+import practiceProblems1.MultiDimentionalArray;
 
 public class HackerRankTestCases {
 
@@ -121,8 +128,50 @@ public class HackerRankTestCases {
 		Display100Primes.displayPrimes();
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public static void Armstrong_Test() {
-		ArmstrongNumber.isArmstrong(153);
+		ArmstrongNumber.isArmstrong(1655);
+	}
+	
+	@Test(enabled=false)
+	public static void sumElements_Test() {
+		int[] number= {23,3,5,10,15};
+		ArraySum.sumArray(number);
+	}
+	@Test(enabled=false)
+	public static void factorial_Test() {
+		int number=6;
+		System.out.println("Factorial of " +number+" is "+Factorial.findFactorial(number));
+	}
+	
+	@Test(enabled=false)
+	public static void floyTriangle_Test() {
+		int row=6;
+		FloydsTriangle.printFloydsTriangle(row);
+	}
+	
+	@Test(enabled=false)
+	public static void reverseNumber_Test() {
+		System.out.println(ReverseNumber.findReverse(521));
+	}
+	
+	@Test(enabled=false)
+	public static void charOccurance_Test() {
+		CharactersInString.findOccurance("remember");
+	}
+	
+	@Test(enabled=false)
+	public static void MultiDimentionalArray_Test() {
+		MultiDimentionalArray.generateMultiArray();
+	}
+	
+	@Test(enabled=true)
+	public static void FibinocciNR_Test() {
+		int[] result=Fibinocci.fibinocciSeries(10);
+		for(int i=0;i<result.length;i++) {
+			System.out.print( result[i]+" ");
+		}
+			
+		
 	}
 }

@@ -1,4 +1,4 @@
-package practice.Problems1;
+package practiceProblems1;
 
 /*Task : Given an integer, n , perform the following conditional actions:
 If n is odd, print Weird

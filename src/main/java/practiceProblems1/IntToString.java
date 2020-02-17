@@ -1,4 +1,4 @@
-package practice.Problems1;
+package practiceProblems1;
 
 public class IntToString {
 	
